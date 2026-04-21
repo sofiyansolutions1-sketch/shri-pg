@@ -1,0 +1,8 @@
+{
+  "name": "Shri Sarvad PG Varanasi",
+  "description": "Premium PG and hostelry services in Cantt, Varanasi. Near Railway Station. AC rooms, Free WiFi, and affordable group stays.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": []
+}
