@@ -7,24 +7,24 @@ const rooms = [
     id: 'single',
     name: 'Single Sharing',
     image: 'https://iili.io/BrE5dxa.png',
-    tag: 'Private'
-  },
-  {
-    id: 'single-v2',
-    name: 'Premium Single',
-    image: 'https://iili.io/BrhZ9RI.png',
-    tag: 'Safe'
+    tag: 'Private',
+    buttonText: 'Send Inquiry',
+    description: 'Perfect for solo stays'
   },
   {
     id: 'double',
-    name: 'Double Sharing',
+    name: 'Double Sharing (AC)',
     image: 'https://iili.io/BrhbzbI.png',
-    tag: 'Popular'
+    tag: 'AC Room',
+    price: '₹1,200',
+    period: 'day',
+    buttonText: 'Book Now',
+    description: 'Attached AC Included'
   }
 ];
 
 export default function RoomCategories() {
-  const handleBookNow = () => {
+  const handleAction = () => {
     window.dispatchEvent(new CustomEvent('changeTab', { detail: 'inquiry' }));
   };
 
@@ -37,13 +37,13 @@ export default function RoomCategories() {
         </div>
 
         {/* Side Scrolling Container for Mobile */}
-        <div className="flex overflow-x-auto pb-4 gap-4 no-scrollbar -mx-4 px-4 md:mx-0 md:px-0 md:grid md:grid-cols-3">
+        <div className="flex overflow-x-auto pb-4 gap-4 no-scrollbar -mx-4 px-4 md:mx-0 md:px-0 md:grid md:grid-cols-2">
           {rooms.map((room) => (
             <div
               key={room.id}
-              className="flex-shrink-0 w-[240px] md:w-full bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 flex flex-col"
+              className="flex-shrink-0 w-[260px] md:w-full bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 flex flex-col"
             >
-              <div className="relative h-32 md:h-48">
+              <div className="relative h-36 md:h-56">
                 <img 
                   src={room.image} 
                   alt={room.name} 
@@ -57,13 +57,26 @@ export default function RoomCategories() {
                 </div>
               </div>
 
-              <div className="p-4 flex flex-col gap-3">
-                <h3 className="font-bold text-sm md:text-lg text-gray-900">{room.name}</h3>
+              <div className="p-4 flex flex-col gap-2">
+                <div className="flex justify-between items-start">
+                  <h3 className="font-bold text-sm md:text-lg text-gray-900">{room.name}</h3>
+                  {room.price && (
+                    <div className="text-right">
+                      <p className="text-blue-600 font-black text-sm md:text-base">{room.price}</p>
+                      <p className="text-[10px] text-gray-400 capitalize">per {room.period}</p>
+                    </div>
+                  )}
+                </div>
+                <p className="text-[11px] text-gray-500">{room.description}</p>
                 <button 
-                  onClick={handleBookNow}
-                  className="w-full bg-blue-600 text-white py-2 rounded-xl text-xs font-bold hover:bg-blue-700 transition-colors shadow-sm"
+                  onClick={handleAction}
+                  className={`w-full py-2 rounded-xl text-xs font-bold transition-colors shadow-sm mt-2 ${
+                    room.buttonText === 'Book Now' 
+                      ? 'bg-blue-600 text-white hover:bg-blue-700' 
+                      : 'bg-white text-blue-600 border border-blue-600 hover:bg-blue-50'
+                  }`}
                 >
-                  Book Now
+                  {room.buttonText}
                 </button>
               </div>
             </div>

@@ -19,7 +19,7 @@ export default function InquiryForm() {
     const userMessage = `Message: ${formData.message}`;
     
     const text = `${welcome}%0A%0A${details}%0A%0A${userMessage}%0A%0ASent via Shri Sarvad Website`;
-    const whatsappUrl = `https://wa.me/919118395703?text=${text}`;
+    const whatsappUrl = `https://wa.me/919451113566?text=${text}`;
     
     // Redirect to WhatsApp
     window.open(whatsappUrl, '_blank');

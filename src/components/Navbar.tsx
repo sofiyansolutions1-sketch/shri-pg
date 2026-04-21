@@ -11,11 +11,11 @@ export default function Navbar() {
             <MapPin className="w-4 h-4 md:w-5 md:h-5" />
             <div className="text-xs md:text-sm font-medium">
               <div className="flex items-center gap-1">
-                <span className="whitespace-nowrap">Cantt, Varanasi</span>
+                <span className="whitespace-nowrap">Vijay Nagar, Varanasi</span>
                 <ChevronDown className="w-3 h-3" />
                 <span className="ml-1 md:ml-3 px-1.5 py-0.5 rounded bg-yellow-400 text-blue-900 font-black text-[8px] md:text-[10px] tracking-tight uppercase shadow-sm border border-yellow-200">Shri Sarvad PG</span>
               </div>
-              <p className="text-[10px] opacity-80 hidden md:block">Uttar Pradesh, India</p>
+              <p className="text-[10px] opacity-80 hidden md:block">Pared Kothi, Uttar Pradesh</p>
             </div>
           </div>
           <div className="flex items-center gap-2">

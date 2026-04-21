@@ -22,17 +22,17 @@ export default function ContactAndLocation() {
                 </div>
                 <div>
                   <p className="text-xs text-gray-400 font-bold uppercase tracking-wider">Mobile</p>
-                  <p className="font-bold text-gray-800">9451113566</p>
+                  <p className="font-bold text-gray-800">94511 13566</p>
                 </div>
               </a>
 
-              <a href="https://wa.me/919118395703" className="flex items-center gap-4 p-5 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
+              <a href="https://wa.me/919451113566" className="flex items-center gap-4 p-5 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all group">
                 <div className="p-3 bg-green-50 text-green-600 rounded-xl group-hover:bg-green-600 group-hover:text-white transition-colors">
                   <MessageSquare className="w-6 h-6" />
                 </div>
                 <div>
                   <p className="text-xs text-gray-400 font-bold uppercase tracking-wider">WhatsApp</p>
-                  <p className="font-bold text-gray-800">9118395703</p>
+                  <p className="font-bold text-gray-800">94511 13566</p>
                 </div>
               </a>
 
@@ -55,8 +55,8 @@ export default function ContactAndLocation() {
                 <div>
                   <p className="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Address</p>
                   <p className="text-gray-800 font-medium leading-relaxed">
-                    S 21/116 L3A Pared Kothi Cantt, Varanasi – 221002<br/>
-                    <span className="text-blue-600 font-bold">(Near Cantt Railway Station)</span>
+                    S 21/1.16 L3A, Vijay Nagar Colony, Pared Kothi, Varanasi cantonment, Varanasi, Uttar Pradesh 221002<br/>
+                    <span className="text-blue-600 font-bold">(Near HOTEL GAUTAM GRAND)</span>
                   </p>
                 </div>
               </div>

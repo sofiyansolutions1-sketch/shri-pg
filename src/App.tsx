@@ -192,8 +192,8 @@ export default function App() {
             <div>
               <h4 className="font-bold mb-6">Office</h4>
               <ul className="space-y-4 text-gray-500">
-                <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-1 text-blue-600" /> S 21/116 L3A Pared Kothi Cantt, Varanasi</li>
-                <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-blue-600" /> +91 9451113566</li>
+                <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-1 text-blue-600" /> S 21/1.16 L3A, Vijay Nagar Colony, Pared Kothi, Varanasi</li>
+                <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-blue-600" /> +91 94511 13566</li>
                 <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-blue-600" /> shrisarvad123@gmail.com</li>
               </ul>
             </div>
