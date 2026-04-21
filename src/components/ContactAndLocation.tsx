@@ -55,7 +55,7 @@ export default function ContactAndLocation() {
                 <div>
                   <p className="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Address</p>
                   <p className="text-gray-800 font-medium leading-relaxed">
-                    S 21/1.16 L3A, Vijay Nagar Colony, Pared Kothi, Varanasi cantonment, Varanasi, Uttar Pradesh 221002<br/>
+                    S 21/1.16 L3A, Vijay Nagar Colony, Pared Kothi, Varanasi, Uttar Pradesh 221002<br/>
                     <span className="text-blue-600 font-bold">(Near HOTEL GAUTAM GRAND)</span>
                   </p>
                 </div>
